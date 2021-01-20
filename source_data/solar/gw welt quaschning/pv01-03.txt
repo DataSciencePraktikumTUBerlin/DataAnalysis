@@ -1,0 +1,25 @@
+Land	2001	2002	2003
+Japan	452,8	636,8	859,6
+Deutschland	206,5	323,6	473,0
+USA	167,8	212,2	275,2
+Australien	33,6	39,1	45,6
+Niederlande	16,2	21,7	39,7
+Italien	20,0	22,0	26,0
+Frankreich	13,9	17,2	21,1
+Schweiz	17,6	19,5	21,0
+Mexiko	15,0	16,2	17,1
+Österreich	6,1	10,3	16,8
+Kanada	8,8	10,0	11,8
+Spanien	4,0	7,0	11,5
+Südkorea	4,7	10,0	11,5
+Norwegen	6,2	6,4	6,6
+Großbritannien	2,7	3,9	5,9
+Thailand		2,9	4,2
+Schweden	3,0	3,3	3,6
+Finnland	2,8	3,1	3,4
+Portugal	1,2	1,7	2,0
+Dänemark	1,5	1,6	1,9
+Türkei	0,3	0,6	1,0
+Israel	0,5	0,5	0,5
+Andere	465	571	761
+Summe Welt	1450	1940	2620

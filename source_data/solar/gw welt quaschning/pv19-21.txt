@@ -1,0 +1,12 @@
+Land	2019	2020	2021
+China	204,7		
+USA	75,9		
+Japan	63		
+Deutschland	49,2		
+Indien	42,8		
+Italien	20,8		
+Australien	14,6		
+Großbritannien	13,3		
+Korea	11,2		
+Frankreich	9,9		
+Summe Welt	627

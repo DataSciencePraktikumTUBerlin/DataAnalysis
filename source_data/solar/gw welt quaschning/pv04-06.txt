@@ -1,0 +1,26 @@
+Land	2004	2005	2006
+Deutschland	1139,4	2071,6	2918,4
+Japan	1132,0	1421,9	1708,5
+USA	376,0	479,0	624,0
+Spanien	24,1	49,0	148,0
+China			80,0
+Australien	52,3	60,6	70,3
+Italien	30,7	37,5	50,0
+Niederlande	43,4	45,4	47,5
+Südkorea	13,8	19,2	41,8
+Frankreich	26,0	26,0	36,5
+Thailand	10,8	23,9	30,5
+Schweiz	23,1	27,1	29,7
+Österreich	21,1	24,0	25,6
+Kanada	13,9	16,7	20,5
+Mexiko	18,2	18,7	19,7
+Großbritannien	7,9	10,9	13,9
+Norwegen	6,9	7,3	7,7
+Schweden	3,9	4,2	4,8
+Finnland	3,7	4,0	
+Portugal	2,0	2,0	4,0
+Dänemark	2,3	2,7	2,9
+Türkei	1,5	2,0	2,5
+Israel	0,9	1,0	1,3
+Andere	746	825	962
+Summe Welt	3700	5180	6850
