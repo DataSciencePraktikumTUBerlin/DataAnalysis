@@ -1,0 +1,44 @@
+
+DOES THE CAPITAL INVESTMENT AND THE COSEQUENT ENERGY SUPPLY AND PERMEATION OF RENEWABLES IN CHINA; GERMANY; INDIA AND USA; CORRESPONT WITH THE INVESTMENT (FINANCIAL INDEXES) OF THE TOP COMPANIES IN EACH COUNTRY RESPECTIVELY? HOW DO THIS INVESTMENTS CORRELATE?
+
+SOURCE FILE: raw_data\worldbank_EnergData.csv
+INDICATORS FROM <https://databank.worldbank.org/source/sustainable-energy-for-all#>
+	INDICATOR					UNIT			RESULT SOURCE FILE
+	Access to electricity rural population		(%)			\
+	Access to electricity Total			(%)			 \
+	Energy intensity, primary energy		(MJ/USD, 2011PPP) 	  wbank_Indic
+	Renewable share electricity output		(%)			 /
+	Renewable share energy of TFEC			(%)			/
+
+SOURCE FILE: raw_data\enerdata_stat_ybook.xlsx
+INDICATORS FROM <https://yearbook.enerdata.net/>
+	INDICATOR					UNIT			RESULT SOURCE FILE
+	Renewable share electricity production		(%)			edata_share_renew_elec
+	Wind and solar share electricity production	(%)			edata_share_windsolar
+	Electricity Production				(TWh)			edata_elec_prod
+	Electricity Consumption				(TWh)			edata_elec_consum
+
+SOURCE FILE: raw_data\bp_stats_review.xlsx
+INDICATORS FROM <http://www.bp.com/statisticalreview>
+	INDICATOR					UNIT			RESULT SOURCE FILE
+	Renewable Energy Geothermal (Installed capacity)(MW)			bp_geoth_instcap
+	Renewable Energy Solar (Installed capacity)	(MW)			bp_solar_instcap
+	Renewable Energy Wind  (Installed capacity)	(MW)			bp_wind_instcap
+	Primary Energy: Consumption			(Exajoules)		bp_penergy_consum
+	Renewables:Consumption				(Exajoules)		bp_renew_consum
+	Electricity generation				(TWh)			bp_elec_gen
+	Electricity generation from other		(TWh)			bp_elec_gen_other
+
+SOURCE FILE: raw_data\Bloomberg_inv_renew.csv 
+INDICATORS FROM <https://www.bloomberg.com/graphics/climate-change-data-green/investment.html>
+	INDICATOR					UNIT			RESULT SOURCE FILE
+	Asset investment in renewables			(Billions USD)		bloom_renew_invest
+
+SOURCE FILE(s): raw_data\IEA_EBalanc_Hlights.xlsx, raw_data\IEA_EEffic_Hlights.xlsx
+INDICATORS FROM <https://www.iea.org/data-and-statistics>
+	INDICATOR					UNIT			RESULT SOURCE FILE
+	WEB Services Energy Indicators	  (Germ/USA)	(energyInt_indexed)	web_serv_energinten
+	WEB Residential Energy Indicators (Germ/USA)	(energyInt_indexed)	web_resid_energinten
+	WEB Transport Energy Indicators   (Germ/USA)	(energyInt_indexed)	web_trans_energinten
+	WEB Industry Energy Indicators	  (Germ/USA)	(energyInt_indexed)	web_indust_energinten
+	WEB Energy Balance  (long table, 'TimeSeries_')	(various)		web_ener_balance
