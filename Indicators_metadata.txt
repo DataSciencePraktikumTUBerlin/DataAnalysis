@@ -1,0 +1,24 @@
+NUMBER 	KEY	INDICATOR					UNIT			SOURCE FILE		SITE
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1	a_eacc2	Access to electricity rural population		(%)			wbank_Indic		https://databank.worldbank.org/source/sustainable-energy-for-all#
+2	a_eacc	Access to electricity Total			(%)			wbank_Indic		https://databank.worldbank.org/source/sustainable-energy-for-all#
+3	a_inten	Energy intensity, primary energy		(MJ/USD, 2011PPP) 	wbank_Indic		https://databank.worldbank.org/source/sustainable-energy-for-all#
+4	a_sharo	Renewable share electricity output		(%)			wbank_Indic		https://databank.worldbank.org/source/sustainable-energy-for-all#
+5	a_shart	Renewable share energy of TFEC			(%)			wbank_Indic		https://databank.worldbank.org/source/sustainable-energy-for-all#
+6	b_sharr	Renewable share electricity production		(%)			edata_share_renew_elec	https://yearbook.enerdata.net/
+7	b_sharw	Wind and solar share electricity production	(%)			edata_share_windsolar	https://yearbook.enerdata.net/
+8	b_eprod	Electricity Production				(TWh)			edata_elec_prod		https://yearbook.enerdata.net/
+9	b_econ	Electricity Consumption				(TWh)			edata_elec_consum	https://yearbook.enerdata.net/
+10	c_icapg	Renewable Energy Geothermal (Installed capacity)(MW)			bp_geoth_instcap	http://www.bp.com/statisticalreview
+11	c_icaps	Renewable Energy Solar (Installed capacity)	(MW)			bp_solar_instcap	http://www.bp.com/statisticalreview
+12	c_icapw	Renewable Energy Wind  (Installed capacity)	(MW)			bp_wind_instcap		http://www.bp.com/statisticalreview
+13	c_pecon	Primary Energy: Consumption			(Exajoules)		bp_penergy_consum	http://www.bp.com/statisticalreview
+14	c_r-con	Renewables:Consumption				(Exajoules)		bp_renew_consum		http://www.bp.com/statisticalreview
+15	c_egen	Electricity generation				(TWh)			bp_elec_gen		http://www.bp.com/statisticalreview
+16	c_egeno	Electricity generation from other		(TWh)			bp_elec_gen_other	http://www.bp.com/statisticalreview
+17	d_Asset	Asset investment in renewables			(Billions USD)		bloom_renew_invest	https://www.bloomberg.com/graphics/climate-change-data-green/investment.html
+18	e_serv	WEB Services Energy Indicators	  (Germ/USA)	(energyInt_indexed)	web_serv_energinten	https://www.iea.org/data-and-statistics
+19	e_resd	WEB Residential Energy Indicators (Germ/USA)	(energyInt_indexed)	web_resid_energinten	https://www.iea.org/data-and-statistics
+20	e_tran	WEB Transport Energy Indicators   (Germ/USA)	(energyInt_indexed)	web_trans_energinten	https://www.iea.org/data-and-statistics
+21	e_indus	WEB Industry Energy Indicators	  (Germ/USA)	(energyInt_indexed)	web_indust_energinten	https://www.iea.org/data-and-statistics
+22	e_ebal	WEB Energy Balance  (long table, 'TimeSeries_')	(various)		web_ener_balance	https://www.iea.org/data-and-statistics
