@@ -22,3 +22,5 @@ NUMBER 	KEY	INDICATOR					UNIT			SOURCE FILE		SITE
 20	e_tran	WEB Transport Energy Indicators   (Germ/USA)	(energyInt_indexed)	web_trans_energinten	https://www.iea.org/data-and-statistics
 21	e_indus	WEB Industry Energy Indicators	  (Germ/USA)	(energyInt_indexed)	web_indust_energinten	https://www.iea.org/data-and-statistics
 22	e_ebal	WEB Energy Balance  (long table, 'TimeSeries_')	(various)		web_ener_balance	https://www.iea.org/data-and-statistics
+23	f_icaps	Renewable installed PV Power			(GW)			qu_solar_PV_power00-19	https://iea-pvps.org/wp-content/uploads/2020/02/5319-iea-pvps-report-2019-08-lr.pdf
+24	f_icapw	Renewable installed Wind Power			(GW)			qu_wind_power00-19	https://www.volker-quaschning.de/datserv/windinst/index.php
