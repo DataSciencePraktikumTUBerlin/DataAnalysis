@@ -1,6 +1,6 @@
 NUMBER 	comp_KEY	INDICATOR					UNIT			SOURCE FILE		SITE									DESCRIPTION
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1	eprod_a 	Total electricity output		(GWh)			wbank_Indic		https://databank.worldbank.org/source/sustainable-energy-for-all#
+1	eprod_a 	Total electricity output			(GWh)			wbank_Indic		https://databank.worldbank.org/source/sustainable-energy-for-all#
 2	econ_a		Total final energy consumption (TFEC)		(TJ)			wbank_Indic		https://databank.worldbank.org/source/sustainable-energy-for-all#
 3	inten_a		Energy intensity, primary energy		(MJ/USD, 2011PPP) 	wbank_Indic		https://databank.worldbank.org/source/sustainable-energy-for-all#
 4	sharo_a		Renewable share electricity output		(%)			wbank_Indic		https://databank.worldbank.org/source/sustainable-energy-for-all#
