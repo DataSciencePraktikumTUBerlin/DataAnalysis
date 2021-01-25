@@ -1,4 +1,4 @@
-,Country,Years,Renewable installed PV PowerGW
+,Country,Years,Renewable installed PV Power GW
 0,United States,2000,0.139
 1,Germany,2000,0.08900000000000001
 2,China,2000,0.0
@@ -71,3 +71,11 @@
 69,Germany,2017,42.5
 70,China,2017,131.1
 71,India,2017,0.0
+72,United States,2018,62.5
+73,Germany,2018,45.5
+74,China,2018,175.4
+75,India,2018,0.0
+76,United States,2019,75.9
+77,Germany,2019,49.2
+78,China,2019,204.7
+79,India,2019,42.8
