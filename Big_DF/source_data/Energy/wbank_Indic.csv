@@ -1,4 +1,4 @@
-﻿Country Name,Country Code,Time,Time Code,Energy intensity level of primary energy (MJ/2011 USD PPP) [6.1_PRIMARY.ENERGY.INTENSITY],Renewable electricity share of total electricity output (%) [4.1_SHARE.RE.IN.ELECTRICITY],Renewable energy share of TFEC (%) [2.1_SHARE.TOTAL.RE.IN.TFEC],Total electricity output (GWh) [4.1.1_TOTAL.ELECTRICITY.OUTPUT],Total final energy consumption (TFEC) (TJ) [1.1_TOTAL.FINAL.ENERGY.CONSUM]
+﻿Country,Country Code,Time,Time Code,Energy intensity,Renewable electricity share of total electricity output,Renewable energy share of TFEC,Total electricity output,Total final energy consumption (TFEC)
 China,CHN,2000,YR2000,10.23305051,16.63949819,29.73071484,1355738,30187188.73
 China,CHN,2001,YR2001,9.833583306,18.95851917,28.45581538,1480949,30940867.04
 China,CHN,2002,YR2002,9.621842057,17.6186279,27.09820152,1654164,32272543.97

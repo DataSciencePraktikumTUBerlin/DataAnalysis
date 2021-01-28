@@ -1,4 +1,4 @@
-year,quarter,country,value
+year,quarter,Country,value
 2004,1,China,0.6
 2004,2,China,0.3
 2004,3,China,0.6
@@ -65,72 +65,72 @@ year,quarter,country,value
 2019,4,China,33.1
 2020,1,China,20.7
 2020,2,China,20.9
-2004,1,U.S.,1.2
-2004,2,U.S.,1.4
-2004,3,U.S.,0.7
-2004,4,U.S.,1.5
-2005,1,U.S.,1.5
-2005,2,U.S.,3.1
-2005,3,U.S.,1.6
-2005,4,U.S.,3
-2006,1,U.S.,5.2
-2006,2,U.S.,3.4
-2006,3,U.S.,5.6
-2006,4,U.S.,9.4
-2007,1,U.S.,4.8
-2007,2,U.S.,5.1
-2007,3,U.S.,7.2
-2007,4,U.S.,9.1
-2008,1,U.S.,8.1
-2008,2,U.S.,6.9
-2008,3,U.S.,5.6
-2008,4,U.S.,5.9
-2009,1,U.S.,2.5
-2009,2,U.S.,4
-2009,3,U.S.,3.7
-2009,4,U.S.,4.9
-2010,1,U.S.,4.5
-2010,2,U.S.,6.4
-2010,3,U.S.,5.6
-2010,4,U.S.,10.7
-2011,1,U.S.,3.8
-2011,2,U.S.,15.5
-2011,3,U.S.,17.9
-2011,4,U.S.,8.1
-2012,1,U.S.,7.6
-2012,2,U.S.,14.3
-2012,3,U.S.,6.5
-2012,4,U.S.,6.6
-2013,1,U.S.,3.4
-2013,2,U.S.,7.1
-2013,3,U.S.,6.8
-2013,4,U.S.,11.8
-2014,1,U.S.,6.2
-2014,2,U.S.,7.2
-2014,3,U.S.,8.1
-2014,4,U.S.,10.2
-2015,1,U.S.,7.5
-2015,2,U.S.,9.2
-2015,3,U.S.,11.4
-2015,4,U.S.,9.3
-2016,1,U.S.,10.7
-2016,2,U.S.,11.6
-2016,3,U.S.,9.5
-2016,4,U.S.,9.2
-2017,1,U.S.,8.9
-2017,2,U.S.,13.2
-2017,3,U.S.,16.1
-2017,4,U.S.,7.7
-2018,1,U.S.,13.2
-2018,2,U.S.,10.8
-2018,3,U.S.,12.2
-2018,4,U.S.,6.7
-2019,1,U.S.,10.1
-2019,2,U.S.,15.4
-2019,3,U.S.,18.8
-2019,4,U.S.,17
-2020,1,U.S.,10.4
-2020,2,U.S.,7.4
+2004,1,United States,1.2
+2004,2,United States,1.4
+2004,3,United States,0.7
+2004,4,United States,1.5
+2005,1,United States,1.5
+2005,2,United States,3.1
+2005,3,United States,1.6
+2005,4,United States,3
+2006,1,United States,5.2
+2006,2,United States,3.4
+2006,3,United States,5.6
+2006,4,United States,9.4
+2007,1,United States,4.8
+2007,2,United States,5.1
+2007,3,United States,7.2
+2007,4,United States,9.1
+2008,1,United States,8.1
+2008,2,United States,6.9
+2008,3,United States,5.6
+2008,4,United States,5.9
+2009,1,United States,2.5
+2009,2,United States,4
+2009,3,United States,3.7
+2009,4,United States,4.9
+2010,1,United States,4.5
+2010,2,United States,6.4
+2010,3,United States,5.6
+2010,4,United States,10.7
+2011,1,United States,3.8
+2011,2,United States,15.5
+2011,3,United States,17.9
+2011,4,United States,8.1
+2012,1,United States,7.6
+2012,2,United States,14.3
+2012,3,United States,6.5
+2012,4,United States,6.6
+2013,1,United States,3.4
+2013,2,United States,7.1
+2013,3,United States,6.8
+2013,4,United States,11.8
+2014,1,United States,6.2
+2014,2,United States,7.2
+2014,3,United States,8.1
+2014,4,United States,10.2
+2015,1,United States,7.5
+2015,2,United States,9.2
+2015,3,United States,11.4
+2015,4,United States,9.3
+2016,1,United States,10.7
+2016,2,United States,11.6
+2016,3,United States,9.5
+2016,4,United States,9.2
+2017,1,United States,8.9
+2017,2,United States,13.2
+2017,3,United States,16.1
+2017,4,United States,7.7
+2018,1,United States,13.2
+2018,2,United States,10.8
+2018,3,United States,12.2
+2018,4,United States,6.7
+2019,1,United States,10.1
+2019,2,United States,15.4
+2019,3,United States,18.8
+2019,4,United States,17
+2020,1,United States,10.4
+2020,2,United States,7.4
 2004,1,Other,0.4
 2004,2,Other,0.7
 2004,3,Other,0.9
