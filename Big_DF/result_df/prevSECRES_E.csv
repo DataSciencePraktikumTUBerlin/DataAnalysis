@@ -1,0 +1,21 @@
+,Country,End use,Indicator,2000,2005,2010,2015,2016,2017,2018
+80,Germany,Total Residential,Per capita energy intensity (index 2000)                     ,100,101,107,89,91,88,86
+81,Germany,Total Residential,Per dwelling energy intensity (index 2000)                   ,100,98,100,82,84,82,79
+82,Germany,Total Residential,Per dwelling TC energy intensity (index 2000)                ,100,89,82,78,78,77,78
+83,Germany,Residential space heating,Per capita energy intensity (index 2000)             ,100,98,102,79,82,78,74
+84,Germany,Residential space heating,Per dwelling energy intensity (index 2000)           ,100,95,95,73,76,73,69
+85,Germany,Residential space heating,Per dwelling TC energy intensity (index 2000)        ,100,84,72,69,69,67,68
+86,Germany,Residential lighting,Per capita energy intensity (index 2000)                  ,100,106,105,93,88,88,90
+87,Germany,Residential lighting,Per dwelling energy intensity (index 2000)                ,100,103,98,87,82,82,83
+88,Germany,Residential appliances,Per capita energy intensity (index 2000)                ,100,106,123,115,106,106,103
+89,Germany,Residential appliances,Per dwelling energy intensity (index 2000)              ,100,102,115,106,99,98,96
+270,United States,Total Residential,Per capita energy intensity (index 2000)               ,100,97,96,90,85,85,91
+271,United States,Total Residential,Per dwelling energy intensity (index 2000)             ,100,96,97,89,84,84,89
+272,United States,Total Residential,Per dwelling TC energy intensity (index 2000)          ,100,98,97,92,89,90,90
+273,United States,Residential space heating,Per capita energy intensity (index 2000)       ,100,83,82,75,66,67,76
+274,United States,Residential space heating,Per dwelling energy intensity (index 2000)     ,100,83,83,75,65,66,75
+275,United States,Residential space heating,Per dwelling TC energy intensity (index 2000)  ,100,85,84,81,75,77,79
+276,United States,Residential lighting,Per capita energy intensity (index 2000)            ,100,102,93,63,64,62,59
+277,United States,Residential lighting,Per dwelling energy intensity (index 2000)          ,100,101,94,63,64,62,58
+278,United States,Residential appliances,Per capita energy intensity (index 2000)          ,100,117,115,114,114,117,116
+279,United States,Residential appliances,Per dwelling energy intensity (index 2000)        ,100,116,116,114,113,116,113
