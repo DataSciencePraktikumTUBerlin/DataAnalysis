@@ -21,5 +21,5 @@
 20,SECTRA_E,0,WEB Transport Energy Indicators,indexed,web_trans_energinten,https://www.iea.org/data-and-statistics,some short descriptiona and context
 21,SECIND_E,0,WEB Industry Energy Indicators,indexed,web_indust_energinten,https://www.iea.org/data-and-statistics,some short descriptiona and context
 22,EBALAN_E,1,WEB Energy Balance ,various,web_ener_balance,https://www.iea.org/data-and-statistics,some short descriptiona and context
-23,ISOL_F,0,Renewable installed PV Power,GW,qu_solar_PV_Power00_19,https://iea-pvps.org/wp-content/uploads/2020/02/5319-iea-pvps-report-2019-08-lr.pdf,
-24,IWIN_F,0,Renewable installed Wind Power,GW,qu_wind_Power00_19,https://www.volker-quaschning.de/datserv/windinst/index.php,
+23,ISOL_F,0,Renewable installed PV Power,GW,qu_solar_PV_power00-19,https://iea-pvps.org/wp-content/uploads/2020/02/5319-iea-pvps-report-2019-08-lr.pdf,
+24,IWIN_F,0,Renewable installed Wind Power,GW,qu_wind_power00-19,https://www.volker-quaschning.de/datserv/windinst/index.php,
