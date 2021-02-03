@@ -1,73 +1,73 @@
 ,Country,Years,Electricity generation from other
-0,United States,2000.0,
-1,Germany,2000.0,
+0,United States,2000.0,180.309.984
+1,Germany,2000.0,2.127.425
 2,China,2000.0,0.0036872
-3,India,2000.0,0.0
-4,United States,2001.0,
+3,India,2000.0,0
+4,United States,2001.0,1.222.713.092
 5,Germany,2001.0,212.795
 6,China,2001.0,0.0023076
-7,India,2001.0,0.0
-8,United States,2002.0,
-9,Germany,2002.0,
+7,India,2001.0,0
+8,United States,2002.0,1.397.548.879
+9,Germany,2002.0,1.862.625
 10,China,2002.0,0.0061278
-11,India,2002.0,0.0
-12,United States,2003.0,
-13,Germany,2003.0,20.305999999999997
+11,India,2002.0,0
+12,United States,2003.0,14.545.181
+13,Germany,2003.0,20.306
 14,China,2003.0,0.0078946
-15,India,2003.0,0.0
-16,United States,2004.0,
+15,India,2003.0,0
+16,United States,2004.0,1.475.084.734
 17,Germany,2004.0,212.268
-18,China,2004.0,0.0
-19,India,2004.0,0.0
-20,United States,2005.0,
+18,China,2004.0,0
+19,India,2004.0,0
+20,United States,2005.0,1.335.915.624
 21,Germany,2005.0,241.468
-22,China,2005.0,0.0
-23,India,2005.0,0.0
-24,United States,2006.0,
-25,Germany,2006.0,254.00599999999997
-26,China,2006.0,0.0
-27,India,2006.0,0.0
-28,United States,2007.0,
+22,China,2005.0,0
+23,India,2005.0,0
+24,United States,2006.0,1.352.413.552
+25,Germany,2006.0,254.006
+26,China,2006.0,0
+27,India,2006.0,0
+28,United States,2007.0,127.020.304
 29,Germany,2007.0,265.586
-30,China,2007.0,0.0
-31,India,2007.0,0.0
-32,United States,2008.0,
-33,Germany,2008.0,247.12400000000002
-34,China,2008.0,0.0
-35,India,2008.0,0.0
-36,United States,2009.0,
+30,China,2007.0,0
+31,India,2007.0,0
+32,United States,2008.0,1.228.199.821
+33,Germany,2008.0,247.124
+34,China,2008.0,0
+35,India,2008.0,0
+36,United States,2009.0,1.252.409.457
 37,Germany,2009.0,211.252
-38,China,2009.0,0.0
-39,India,2009.0,0.0
-40,United States,2010.0,
+38,China,2009.0,0
+39,India,2009.0,0
+40,United States,2010.0,1.346.426.351
 41,Germany,2010.0,264.293
-42,China,2010.0,
-43,India,2010.0,0.0
-44,United States,2011.0,
+42,China,2010.0,1.985.186
+43,India,2010.0,0
+44,United States,2011.0,1.480.104.819
 45,Germany,2011.0,253.062
 46,China,2011.0,21.669
-47,India,2011.0,0.0
-48,United States,2012.0,
+47,India,2011.0,0
+48,United States,2012.0,1.450.250.746
 49,Germany,2012.0,261.096
-50,China,2012.0,
-51,India,2012.0,0.0
-52,United States,2013.0,
+50,China,2012.0,2.027.989
+51,India,2012.0,0
+52,United States,2013.0,1.430.566.562
 53,Germany,2013.0,26.18
-54,China,2013.0,
-55,India,2013.0,0.0
-56,United States,2014.0,
+54,China,2013.0,229.827.266
+55,India,2013.0,0
+56,United States,2014.0,1.407.183.718
 57,Germany,2014.0,26.913
-58,China,2014.0,
+58,China,2014.0,2.614.633
 59,India,2014.0,0.2068
-60,United States,2015.0,
-61,Germany,2015.0,
-62,China,2015.0,
+60,United States,2015.0,1.475.186.233
+61,Germany,2015.0,2.713.520.869
+62,China,2015.0,2.678.359
 63,India,2015.0,0.137685
-64,United States,2016.0,
-65,Germany,2016.0,27.543000000000003
+64,United States,2016.0,1.435.359.482
+65,Germany,2016.0,27.543
 66,China,2016.0,421.935
-67,India,2016.0,0.10410499999999999
-68,United States,2017.0,
+67,India,2016.0,0.104105
+68,United States,2017.0,1.368.882.154
 69,Germany,2017.0,267.438
-70,China,2017.0,
+70,China,2017.0,46.185.796
 71,India,2017.0,0.174565
