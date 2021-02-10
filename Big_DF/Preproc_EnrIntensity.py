@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 
 # Input Options
 SELECTED_COUNTRIES = ['China', 'Germany', 'India', 'United States']
-YEARS_INCLUDED = [2000,2017]
+YEARS_INCLUDED = [2000,2018]
 
 # Load all corresponding metadata in a compound dict (dict of dicts)
 df_meta = pd.read_csv('Indicators_metadata.csv')
@@ -26,15 +26,15 @@ csv_list = [file.replace('source_data/Energy\\', '').replace('.csv', '') for fil
 # Build the Dict
 df_metadict={}
 for ind_key in df_meta['KEY']:
-    if df_meta_temp['SOURCE FILE'][ind_key] in csv_list:
-        df_metadict_sub = {}
-        df_metadict_sub['Units_ind']= df_meta_temp['UNIT'][ind_key]
-        df_metadict_sub['Origin_ind']= df_meta_temp['SITE'][ind_key]
-        df_metadict_sub['Name_ind'] =  df_meta_temp['INDICATOR'][ind_key]
-        df_metadict_sub['Desc_ind'] =  df_meta_temp['DESCRIPTION'][ind_key]
-        df_metadict_sub['source_file'] =  df_meta_temp['SOURCE FILE'][ind_key]+'.csv'
-        df_metadict_sub['excep_format'] = df_meta_temp['SPECIAL FORMAT'][ind_key]
-        df_metadict[ind_key] = df_metadict_sub 
+#    if df_meta_temp['SOURCE FILE'][ind_key] in csv_list:
+    df_metadict_sub = {}
+    df_metadict_sub['Units_ind']= df_meta_temp['UNIT'][ind_key]
+    df_metadict_sub['Origin_ind']= df_meta_temp['SITE'][ind_key]
+    df_metadict_sub['Name_ind'] =  df_meta_temp['INDICATOR'][ind_key]
+    df_metadict_sub['Desc_ind'] =  df_meta_temp['DESCRIPTION'][ind_key]
+    df_metadict_sub['source_file'] =  df_meta_temp['SOURCE FILE'][ind_key]+'.csv'
+    df_metadict_sub['excep_format'] = df_meta_temp['SPECIAL FORMAT'][ind_key]
+    df_metadict[ind_key] = df_metadict_sub 
 
 indicators=list(df_metadict.keys())        
 
@@ -47,7 +47,7 @@ for indic in indicators:
 indicators= ['SECSER_E',
 'SECRES_E',
 'SECTRA_E',
-'SECIND_E'
+'SECIND_E',
 ]
 
 # Adjust the DF to homogeneity
@@ -78,19 +78,23 @@ for indic in indicators:
         df_p.to_csv('No_Notebook/' + Name_ind +'.csv')
         df_dict_H[indic] = df_p 
 
-# Proceed to plot 
+# Proceed to plot
+sns.set(context='talk', style='darkgrid')
 for indic in indicators:
-    df_graph = df_dict_H[indic] # Adjust DF if necessary
+    # Adjust DF if necessary
+    df_graph = df_dict_H[indic]
+    df_graph['Years'] += 1 # values correspond to the END of every year (shift to the right)
+    df_graph['Years'] = pd.to_datetime(df_graph['Years'] , format='%Y')
     # Set figure size (width, height) in inches 
     fig, ax = plt.subplots(figsize = ( 15 , 6 )) 
     # Plot the scatterplot 
-    sns.pointplot(ax = ax , x='Years', y=df_metadict[indic]['Name_ind'], data=df_graph, hue='Country')
+    sns.lineplot(ax = ax , x='Years', y=df_metadict[indic]['Name_ind'], data=df_graph, hue='Country')
     # Set label for x-axis 
     ax.set_xlabel( 'Years' , size = 12 ) 
     # Set label for y-axis 
-    ax.set_ylabel( indic , size = 12 ) 
+    ax.set_ylabel( df_metadict[indic]['Units_ind'] , size = 12 ) 
     # Set title for plot 
-    ax.set_title( indic , size = 24 ) 
+    ax.set_title( df_metadict[indic]['Name_ind'] , size = 24 ) 
     # Save the figure
     plt.savefig('No_Notebook/' + df_metadict[indic]['Name_ind'] +'.jpg')
     # Display figure 
