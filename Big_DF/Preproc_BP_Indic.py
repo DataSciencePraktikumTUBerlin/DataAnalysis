@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Feb 11 15:12:41 2021
+Created on Thu Feb 11 15:21:54 2021
 
 @author: Roberto
 """
@@ -12,7 +12,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Input Options
-SELECTED_COUNTRIES = ['China', 'Germany', 'India', 'United States']
+SELECTED_COUNTRIES = ['China', 'Germany', 'India', 'US']
 YEARS_INCLUDED = [2000,2018]
 
 # Load all corresponding metadata in a compound dict (dict of dicts)
@@ -34,6 +34,7 @@ for ind_key in df_meta['KEY']:
     df_metadict_sub['Desc_ind'] =  df_meta_temp['DESCRIPTION'][ind_key]
     df_metadict_sub['source_file'] =  df_meta_temp['SOURCE FILE'][ind_key]+'.csv'
     df_metadict_sub['excep_format'] = df_meta_temp['SPECIAL FORMAT'][ind_key]
+    df_metadict_sub['is_cumulative'] = df_meta_temp['CUMULATIVE'][ind_key]
     df_metadict[ind_key] = df_metadict_sub 
 
 indicators=list(df_metadict.keys())        
@@ -45,7 +46,15 @@ for indic in indicators:
     
 # Include manual selection of indicators when needed
 indicators= [
- 'ASST_D'
+ 'IGEO_C',
+ 'ISOL_C',
+ 'IWIN_C',
+ 'PENERC_C',
+ 'RPENEC_C',
+ 'ELECTP_C',
+ 'ELECTP2_C',
+ 'ISOL_F',
+ 'IWIN_F'
 ]
 
 # Adjust the DF to homogeneity
@@ -53,10 +62,12 @@ df_dict_H = {}
 for indic in indicators:    
         Name_ind =df_metadict[indic]['Name_ind']
         df_p = df_dict[indic]
+        # Selecting rows based on selected countries 
+        df_p = df_p[df_p.Country.isin(SELECTED_COUNTRIES)]
         # Melt to a Long format
-        df_p=df_dict[indic].melt(id_vars=['Country','Years'])
+        df_p=df_p.melt(id_vars=['Country'])
         # Rename column to Years
-        #df_p =df_p.rename(columns = {'variable':'Years'})
+        df_p =df_p.rename(columns = {'variable':'Years'})
         # Delete columns with NaN values (in any Column)
         df_p.dropna(inplace = True)
         # Adjust column types
@@ -65,11 +76,14 @@ for indic in indicators:
         # Rename column to Indic Name
         df_p =df_p.rename(columns = {'value':Name_ind})
         # group subcategories of Indicator
-        df_p = df_p.groupby(by=['Country', 'Years'],as_index=False).mean()        
-        # Selecting rows based on time range and selected countries 
+        #df_p = df_p.groupby(by=['Country', 'Years'],as_index=False).mean()        
+        # Selecting rows based on time range
         sel_y = YEARS_INCLUDED
         df_p =df_p[(df_p['Years']>=sel_y[0])&(df_p['Years']<=sel_y[1])]
-        df_p = df_p[df_p.Country.isin(SELECTED_COUNTRIES)]
+        # Sort for convenience
+        df_p.sort_values(['Country', 'Years'],  
+               ascending=[True, 
+                          True])
         # Clean the indexes
         df_p = df_p.set_index('Country')
         df_p = df_p.reset_index()
