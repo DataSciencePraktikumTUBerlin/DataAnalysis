@@ -12,7 +12,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Input Options
-SELECTED_COUNTRIES = ['China', 'Germany', 'India', 'US']
+SELECTED_COUNTRIES = ['China', 'Germany', 'India', 'US', 'United States']
 YEARS_INCLUDED = [2000,2018]
 
 # Load all corresponding metadata in a compound dict (dict of dicts)
@@ -73,21 +73,33 @@ for indic in indicators:
         # Adjust column types
         df_p['value']= pd.to_numeric(df_p['value'],errors='coerce')
         df_p['Years'] = pd.to_numeric(df_p['Years'],errors='coerce')
-        # Rename column to Indic Name
-        df_p =df_p.rename(columns = {'value':Name_ind})
         # group subcategories of Indicator
         #df_p = df_p.groupby(by=['Country', 'Years'],as_index=False).mean()        
         # Selecting rows based on time range
         sel_y = YEARS_INCLUDED
         df_p =df_p[(df_p['Years']>=sel_y[0])&(df_p['Years']<=sel_y[1])]
         # Sort for convenience
-        df_p.sort_values(['Country', 'Years'],  
-               ascending=[True, 
-                          True])
+        df_p.sort_values(['Years'],  
+               ascending=[True])#,True])
         # Clean the indexes
-        df_p = df_p.set_index('Country')
+        df_p = df_p.set_index('Years')
         df_p = df_p.reset_index()
-        df_p.to_csv('No_Notebook/On_test/' + Name_ind +'.csv')
+        # Adjust for cumulative values
+        if df_metadict[indic]['is_cumulative']:
+            # get the indicator column
+            df_p['accu'] = df_p['value']
+            mpb = df_p['value']
+            # Insert enough zeros per country selected, and erased last item
+            for i in range(1, len(SELECTED_COUNTRIES)):
+                mpb = pd.concat([pd.Series([0]), mpb])#s1.add(minus)
+                #mpb.reset_index()
+                mpb.pop(len(df_p['accu'])-i)
+            df_p['accu'] = mpb.array
+            df_p['value'] = df_p['value'].array - df_p['accu'].array
+            del df_p['accu']
+        # Rename column to Indic Name
+        df_p =df_p.rename(columns = {'value':Name_ind})            
+        df_p.to_csv('No_Notebook/On_test/cum/' + Name_ind +'.csv')
         df_dict_H[indic] = df_p 
 
 # Proceed to plot
@@ -108,6 +120,6 @@ for indic in indicators:
     # Set title for plot 
     ax.set_title( df_metadict[indic]['Name_ind'] , size = 24 ) 
     # Save the figure
-    plt.savefig('No_Notebook/On_test/' + df_metadict[indic]['Name_ind'] +'.jpg')
+    plt.savefig('No_Notebook/On_test/cum/' + df_metadict[indic]['Name_ind'] +'.jpg')
     # Display figure 
     plt.show() 
