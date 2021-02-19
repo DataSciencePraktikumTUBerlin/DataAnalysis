@@ -57,10 +57,12 @@ for indic in indicators:
         Name_ind =df_metadict[indic]['Name_ind']
         df_p = df_dict[indic]
         # Drop unnecessary columns (incl. NaN)
- #       df_p.dropna(inplace = True)        
+        df_p.dropna(inplace = True)        
         df_p = df_p[['Country Name', 'Time', Name_ind]]
         # Melt to a Long format if necessary
         df_p=df_p.melt(id_vars= ['Country Name', 'Time'], value_vars= Name_ind)
+        # Delete name column
+        del df_p['variable']
         # Rename column to Years
         df_p =df_p.rename(columns = {'Time':'Years'})
         df_p =df_p.rename(columns = {'Country Name':'Country'})
