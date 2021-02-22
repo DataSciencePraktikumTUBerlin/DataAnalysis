@@ -28,27 +28,27 @@ f = f.groupby('Year').sum()
 #selectpairs if necessary
 sel_e = ['Energy intensity-primary energy',
        'Renewable share electricity output',
-       'Renewable share energy of TFEC']
-sel_f = ['Government R&D', 'Corporate R&D',
-       'Asset finance',
+       'Renewables-Consumption Prim Energy']
+sel_f = ['Corporate R&D',
        'Asset Finance minus Re-invested equity',
        'Number of policies']
 
 years = np.arange(2004, 2016)
 
-e = e.loc[years]#[sel_e].loc[years]
-f = f.loc[years]#[sel_f].loc[years]
+e = e[sel_e].loc[years]
+f = f[sel_f].loc[years]
 
 plt.figure(figsize=(12, 12))
 
 corr = pd.concat([e, f], axis=1, keys=['e', 'f']).corr().loc['f', 'e']
 # mask = np.triu(np.ones_like(corr, dtype=bool))
 
-h = sns.heatmap(corr, vmin=-1, vmax=1, annot=True, cmap='BrBG')
-h.set_xticklabels(h.get_xticklabels(), rotation=45, ha='right')
+h = sns.heatmap(corr, vmin=-1, vmax=1, annot=True, cmap='BrBG', annot_kws={"size":30})
+h.set_xticklabels(h.get_xticklabels(), rotation=15, ha='right', fontsize=14)
+h.set_yticklabels(h.get_yticklabels(), rotation=70, ha='right', fontsize=14)
 
 # Save the figure
-plt.savefig("Ult_Correlogram_En_Fin.jpg")#"resume_correlogram.jpg")
+plt.savefig("resume_correlogram.jpg")#"resume_correlogram.jpg")
 
 c_corr_list = list()#c_c for c_c in corr.iteritems()]
 

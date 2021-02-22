@@ -22,4 +22,4 @@ f = f[f.Year.isin(years)]
 
 df = e.merge(f, on=['Year', 'Country'], how = 'inner')
     
-df.to_csv('./Big_DF.csv')
+#df.to_csv('./Big_DF.csv')
