@@ -23,17 +23,17 @@ df_Big = pd.read_csv('Big_DF.csv', index_col=0)
 
 sel_e = [#'Asset investment in renewables',
          #'Electricity Consumption',
-         #'Electricity generation',
+         'Electricity generation',
          #'Electricity generation from other',
          #'Electricity Production',
-         'Energy intensity-primary energy',
-         #'Primary Energy-Consumption',
+         #'Energy intensity-primary energy',
+         'Primary Energy-Consumption',
          'Renewables-Consumption Prim Energy',
          #'Renewable Energy Solar (Installed capacity)',
          #'Renewable Energy Wind  (Installed capacity)',
          #'Renewable installed PV Power',
          #'Renewable installed Wind Power',
-         'Renewable share electricity output',
+         #'Renewable share electricity output',
          #'Renewable share electricity production',
          #'Renewable share energy of TFEC',
          #'Total electricity output',
@@ -42,20 +42,22 @@ sel_e = [#'Asset investment in renewables',
          ]
 
 sel_f = [#'Government R&D',
-         'Corporate R&D',
+         #'Corporate R&D',
          #'Venture capital',
          #'Private equity expansion capital',
          #'Public markets',
          #'Asset finance',
-         'Asset Finance minus Re-invested equity',
-         #'Small distributed capacity',
+         #'Asset Finance minus Re-invested equity',
+         'Small distributed capacity',
          #'Private equity buy-outs',
          #'Public markets investor exits',
-         #'Corporate M&A',
+         'Corporate M&A',
          #'Project acquisition & refinancing',
          #'Total: M&A/ buy-outs etc.',
          'Number of policies'
          ]
+
+df_Big = df_Big.groupby('Year').mean()
 
 # Proceed to plot
 with sns.plotting_context("notebook", font_scale=2):
@@ -68,8 +70,8 @@ with sns.plotting_context("notebook", font_scale=2):
             df_graph[col_e] = df_graph[col_e] / df_graph[col_e].max()
             df_graph[col_f] = df_graph[col_f] / df_graph[col_f].max()
             # Plot the regplots
-            lm = sns.lmplot(x=col_e, y=col_f, data=df_graph, hue='Country'
+            lm = sns.lmplot(x=col_e, y=col_f, data=df_graph#, hue='Country'
                             ,height=8.27, aspect=11.7/8.27)
             # Save the figure
-            plt.savefig(f"ind_pairs_plot/{col_f.replace(' ','_').replace('.','').replace('/','').replace(':','_')}_VS_{col_e}.jpg") 
+            plt.savefig(f"plots_report/{col_f.replace(' ','_').replace('.','').replace('/','').replace(':','_')}_VS_{col_e}_Agg_Mean.jpg") 
             plt.close()

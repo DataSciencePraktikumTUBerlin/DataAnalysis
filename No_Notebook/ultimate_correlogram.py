@@ -35,8 +35,8 @@ sel_f = ['Corporate R&D',
 
 years = np.arange(2004, 2016)
 
-e = e[sel_e].loc[years]
-f = f[sel_f].loc[years]
+e = e.loc[years]#sel_e].loc[years]
+f = f.loc[years]#[sel_f].loc[years]
 
 plt.figure(figsize=(12, 12))
 
