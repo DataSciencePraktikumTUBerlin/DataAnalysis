@@ -20,5 +20,5 @@
 19,SECTRA_E,0,1,Energy Intensity - Transport,index 2000 - MJ/USD PPP 2015,web_trans_energinten,https://www.iea.org/data-and-statistics,"it is the ratio of the total primary energy supply (TPES) divided by the gross domestic product (GDP). (from this source comes only for the years 2000, 2005, 2010,	2015,	2016,	2017,	2018)"
 20,SECIND_E,0,1,Energy Intensity - Industry,index 2000 - MJ/USD PPP 2015,web_indust_energinten,https://www.iea.org/data-and-statistics,"it is the ratio of the total primary energy supply (TPES) divided by the gross domestic product (GDP). (from this source comes only for the years 2000, 2005, 2010,	2015,	2016,	2017,	2018)"
 21,EBALAN_E,0,1,WEB Energy Balance ,various,web_ener_balance,https://www.iea.org/data-and-statistics,some short descriptiona and context
-22,ISOL_F,1,0,Renewable installed PV Power,GW,qu_solar_PV_Power00_19,https://iea-pvps.org/wp-content/uploads/2020/02/5319-iea-pvps-report-2019-08-lr.pdf,
-23,IWIN_F,1,0,Renewable installed Wind Power,GW,qu_wind_Power00_19,https://www.volker-quaschning.de/datserv/windinst/index.php,
+22,ISOL_F,1,0,Renewable installed PV Power,GW,qu_solar_PV_Power00_19,https://iea-pvps.org/wp-content/uploads/2020/02/5319-iea-pvps-report-2019-08-lr.pdf,some short descriptiona and context
+23,IWIN_F,1,0,Renewable installed Wind Power,GW,qu_wind_Power00_19,https://www.volker-quaschning.de/datserv/windinst/index.php,some short descriptiona and context

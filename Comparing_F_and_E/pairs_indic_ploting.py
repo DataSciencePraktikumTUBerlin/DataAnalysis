@@ -18,7 +18,7 @@ TO NOTICE:
     https://github.com/mwaskom/seaborn/issues/2301
 """
 
-df_meta = pd.read_csv('Indicators_metadata_ult.csv', index_col='INDICATOR')
+df_meta = pd.read_csv('Indicators_metadata.csv', index_col='INDICATOR')
 df_Big = pd.read_csv('gen_DF.csv', index_col=0)
 
 sel_e = [#'Asset investment in renewables',
@@ -26,8 +26,8 @@ sel_e = [#'Asset investment in renewables',
          'Electricity generation',
          #'Electricity generation from other',
          #'Electricity Production',
-         #'Energy intensity-primary energy',
-         'Primary Energy-Consumption',
+         'Energy intensity-primary energy',
+         #'Primary Energy-Consumption',
          'Renewables-Consumption Prim Energy',
          #'Renewable Energy Solar (Installed capacity)',
          #'Renewable Energy Wind  (Installed capacity)',
@@ -47,8 +47,8 @@ sel_f = [#'Government R&D',
          #'Private equity expansion capital',
          #'Public markets',
          #'Asset finance',
-         #'Asset Finance minus Re-invested equity',
-         'Small distributed capacity',
+         'Asset Finance minus Re-invested equity',
+         #'Small distributed capacity',
          #'Private equity buy-outs',
          #'Public markets investor exits',
          'Corporate M&A',
@@ -59,7 +59,7 @@ sel_f = [#'Government R&D',
 
 # Aggregate if wanted
 #df_Big = df_Big.groupby('Year').mean()
-df_Big = df_Big.groupby('Year').sum()
+#df_Big = df_Big.groupby('Year').sum()
 
 # Proceed to plot
 with sns.plotting_context("notebook", font_scale=2):
@@ -72,8 +72,8 @@ with sns.plotting_context("notebook", font_scale=2):
             df_graph[col_e] = df_graph[col_e] / df_graph[col_e].max()
             df_graph[col_f] = df_graph[col_f] / df_graph[col_f].max()
             # Plot the regplots
-            lm = sns.lmplot(x=col_e, y=col_f, data=df_graph#, hue='Country'
-                            ,height=8.27, aspect=11.7/8.27)
+            lm = sns.lmplot(x=col_e, y=col_f, data=df_graph, hue='Country'
+                            ,height=8.27, aspect=11.7/8.27, legend_out=False)
             # Save the figure
-            plt.savefig(f"plots_new/{col_f.replace(' ','_').replace('.','').replace('/','').replace(':','_')}_VS_{col_e}_Agg_Mean.jpg") 
+            plt.savefig(f"pair_plots/{col_f.replace(' ','_').replace('.','').replace('/','').replace(':','_')}_VS_{col_e}.jpg")#_Agg.jpg") 
             plt.close()
