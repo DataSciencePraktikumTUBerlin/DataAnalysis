@@ -17,7 +17,7 @@ TO NOTICE:
 """
 
 df_meta = pd.read_csv('Indicators_metadata_ult.csv', index_col='INDICATOR')
-df_Big = pd.read_csv('Big_DF.csv', index_col=0)
+df_Big = pd.read_csv('energy_OLD.csv', index_col=0)
 
 # Proceed to plot
 for col in df_Big.columns:
