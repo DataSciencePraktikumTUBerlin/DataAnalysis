@@ -1,4 +1,4 @@
-Since we worked with multiple Repositories and branches, we decided to leave the relevant files in place. In the following you see the path to all figures related to our presentation as well as the project report. Feel free to checkout all the other stuff we were working on (links at end of README).
+Since we worked with multiple Repositories and branches, we decided to leave the relevant files in place. In the following you see the path to all figures related to our presentation as well as the project report. Feel free to checkout all the other stuff we were working on (links at end of readme).
 
 Repository: DataAnalysis 
 Branch:  main
@@ -51,7 +51,7 @@ Branch:  main
 
 
 
-Thank you for the term and the nice Project.
+Thank you for the term and the nice project.
 Paul, Roberto, Stevan and Annalena 
 
 Further work: https://github.com/DataSciencePraktikumTUBerlin
