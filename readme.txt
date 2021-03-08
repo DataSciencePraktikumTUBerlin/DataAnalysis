@@ -26,19 +26,6 @@ Branch:  main
 #Figure 9
 /Energy/IV.I_notebooks/4.1_8_Electricity_Generation_vs_Energy_Consumption.ipynb
 
-
-#Figure 18
-/Results_and_Conclusions/Comparing Energy and Finance Data.ipynb
-
-#Figure 19, 20, 21
-/Results_and_Conclusions/Plotting Energy Data.ipynb
-
-#As well figures in jpg format are located in :
-/Results_and_Conclusions/energy_time_series
-/Results_and_Conclusions/finance_time_series
-
- 
-
 #Codebase to generate Figures Finance:
 #Figure 10
 /Finance/Plotting Renewable Energy Policies.ipynb
@@ -48,6 +35,17 @@ Branch:  main
 
 #Figure 16
 /Finance/Plotting Stock Market Prices.ipynb
+
+#Codebase to generate Figures in Results & Conclusions:
+#Figure 18
+/Results_and_Conclusions/Comparing Energy and Finance Data.ipynb
+
+#Figure 19, 20, 21
+/Results_and_Conclusions/Plotting Energy Data.ipynb
+
+#As well figures in jpg format are located in :
+/Results_and_Conclusions/energy_time_series
+/Results_and_Conclusions/finance_time_series
 
 
 
