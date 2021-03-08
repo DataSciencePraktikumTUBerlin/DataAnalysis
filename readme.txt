@@ -52,6 +52,6 @@ Branch:  main
 
 
 Thank you for the term and the nice project.
-Paul, Roberto, Stevan and Annalena 
+Paul, Roberto, Stefan and Annalena 
 
 Further work: https://github.com/DataSciencePraktikumTUBerlin
